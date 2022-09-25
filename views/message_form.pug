@@ -1,0 +1,13 @@
+extends layout 
+
+block content
+    form(action="" method='POST')
+        h1 Create Message
+        div#title-group.form-group
+            label(for="title") Title:
+            input#title.form-control(type="text" name="title" placeholder='title' required='true' maxLength='100')
+        div.form-group
+            label#text-label(for="text") Text: 
+            textarea#text.form-control(name="text" placeholder='Text' required='true' maxLength='500')
+        input(type="hidden" name='user' value=currentUser._id)
+        button.submit-btn(type="submit") Create

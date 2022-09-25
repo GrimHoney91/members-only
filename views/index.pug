@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  if currentUser 
+    h2.welcome-message Welcome back #{currentUser.username}!
+    h3.status-level Account Status: #{currentUser.status}
+  each message in messages 
+    div.message-container
+      div.content-container
+        h2.title #{message.title}
+        div.at-container
+          if currentUser && currentUser.status !== 'regular'
+            h3.username #{message.user.username} 
+            span.dot 
+            time.time-stamp #{message.time_stamp_formatted}
+          else 
+            h3.username Anonymous
+        p.message #{message.text}
+        if currentUser && currentUser.status === 'admin'
+          form#delete-form(action="" method='POST')
+            input(type="hidden" name='messageid' value=message._id)
+            button#delete-btn(type="submit") Delete

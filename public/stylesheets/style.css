@@ -1,0 +1,200 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.ni {
+  font-size: 3rem;
+}
+
+/*            HEADER             */
+header {
+  padding: 2rem;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-link {
+  text-decoration: none;
+  color: purple;
+}
+.home-link h1 {
+  font-size: 3rem;
+}
+.welcome-message {
+  font-size: 2.5rem;
+  color: purple;
+}
+.status-level {
+  color: purple;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+ul li:not(:last-child) {
+  padding-right: 2rem;
+}
+.nav-links {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  color: purple;
+}
+.nav-links div {
+  background-color: black;
+}
+.nav-links p {
+  font-size: 2rem;
+}
+.nav-links p:hover {
+  text-decoration: underline;
+}
+
+
+
+/*             MAIN             */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.message-container {
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+}
+.message-container:not(:first-child) {
+  margin-top: 2rem;
+}
+.content-container {
+  flex: 1;
+}
+.title {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.at-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.at-container *:not(:last-child) {
+  margin-right: 1rem;
+}
+.username {
+  font-size: 1.75rem;
+}
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: grey;
+  border-radius: 5rem;
+}
+.time-stamp {
+  font-size: 1.5rem;
+}
+.message {
+  font-size: 2rem;
+}
+
+form {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+form h1 {
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+#title-group {
+  align-self: flex-start;
+  width: 100%;
+}
+#title {
+  flex: 1;
+}
+#text-label {
+  align-self: baseline;
+}
+label {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+.form-control {
+  padding: 7px;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+}
+.form-control:focus {
+  border-color: purple;
+}
+textarea {
+  width: 50rem;
+  height: 20rem;
+  resize: none;
+}
+button {
+  padding: 0.5rem 2.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+.submit-btn {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+/*            FOOTER            */
+footer {
+  background-color: gainsboro;
+  display: grid;
+  padding: 2rem;
+}
+footer h4 {
+  margin: auto;
+  font-size: 2rem;
+  color: purple;
+}
+#delete-form {
+  background-color: transparent;
+  padding: 2rem 0rem 0rem 0rem;
+}
+#delete-btn {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
