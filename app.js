@@ -9,7 +9,6 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 const User = require('./models/user');
 
 var indexRouter = require('./routes/index');
